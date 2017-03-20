@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration :none;
+}
+body{
+	padding: 20px;
+}
+#container{
+	width: 600px;
+	height: 400px;
+	position: relative;
+	border: 3px solid #333;
+	overflow: hidden;
+}
+#list{
+	height: 400px;
+	width: 4200px;
+	position: absolute;
+	z-index: 1;  /*设置元素的堆叠顺序*/
+}
+#list img{
+	float: left;
+}
+#buttons{	
+	height: 10px;
+	width: 100px; 
+	z-index: 2; 
+	bottom: 20px; 
+	left: 250px;
+	position: absolute;
+}
+#buttons span { 
+	cursor: pointer; /*规定要显示的光标的类型（形状)*/
+	float: left; 
+	border: 1px solid #fff; 
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%; 
+	background: #333; 
+	margin-right: 5px;
+}
+#buttons .on {  
+	background: orangered;
+}
+
+.arrow { 
+	cursor: pointer; 
+	display: none; 
+	line-height: 39px; 
+	text-align: center; 
+	font-size: 36px; 
+	font-weight: bold; 
+	width: 40px; height: 40px;  
+	position: absolute; 
+	z-index: 2; 
+	top: 180px; 
+	background-color: RGBA(0,0,0,.3); /*透明度*/
+	color: #fff;
+}
+.arrow:hover { 
+	background-color: RGBA(0,0,0,.7);
+}
+#container:hover .arrow { 
+	display: block;
+}
+#prev { 
+	left: 20px;
+}
+#next { 
+	right: 20px;
+}

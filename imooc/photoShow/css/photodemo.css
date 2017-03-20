@@ -1,0 +1,43 @@
+body, ul, li, ol {
+    list-style: none;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
+	font-family: 'Microsoft Yahei';
+}
+img {
+	border: 0px;
+}
+.picList {
+	width: 100%;
+	float: left;
+}
+.picList .col {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin: 10px 0 0 10px;
+}
+.picList .col img, .col a {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.picList .col img {
+	width: 100%;
+}
+.picList .col a {
+	display: block;
+	width: 280px;
+	height: 180px;
+    top:170px;
+	background:#000;
+	color: white;
+	font-style: normal;
+	line-height: 25px;
+	padding: 10px;
+	opacity: 0.8;
+	text-decoration: none;
+}
