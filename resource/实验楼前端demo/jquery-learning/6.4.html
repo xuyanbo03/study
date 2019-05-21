@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <title>jQuery Ajax - Load</title>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $.ajaxSetup({
+          url: "../data/AjaxGetMethod.aspx",
+          data: { "param": "ziqiu.zhang" },
+          global: false,
+          type: "POST",
+          success: function(data, textStatus) {
+            $("#divResult").html(data);
+          }
+      });
+      $("#btnAjax").click(function(event) { $.ajax(); });
+      $("#btnGet").click(function(event) { $.get(); });
+      $("#btnPost").click(function(event) { $.post(); });
+      $("#btnGet2").click(function(event) { $.get("../data/AjaxGetMethod.aspx",{ "param": "other" }); });
+    });
+  </script>
+</head>  
+<body>    
+  <button id="btnAjax">nontransfer param call ajax() method</button><br />
+  <button id="btnGet">nontransfer param call get() method</button><br />
+  <button id="btnPost">nontransfer param call post() method</button><br />
+  <button id="btnGet2">transfer param call get() method , use global default callback</button><br />
+  <br />
+  <div id="divResult"></div>
+</body>
+</html>

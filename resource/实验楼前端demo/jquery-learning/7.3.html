@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <title>jQuery Animation - fadeTo </title>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#divPop").animate(
+      {
+        "opacity": "hide",
+        "top": $(window).height() - $("#divPop").height() - $("#divPop").position().top
+      },
+      600,
+      function() { $("#divPop").hide(); }
+      );
+    });
+  </script>
+</head>
+<body>       
+  <div id="divPop" style="background-color: #f0f0f0; border: solid 1px #000000; width: 300px; height: 100px; position:absolute;">
+    <div style="text-align: center;">pop div</div>
+  </div>
+</body>
+</html>

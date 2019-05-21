@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<title>fangda</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<style>
+		#copycanvas {
+           border: 1px solid #000;
+		   display: none;
+        }
+		#square {
+			width: 90px;
+			height: 90px;
+			background-color: #cc3;
+			border: 1px solid #f00;
+			opacity: 0.5;
+			position: absolute;
+			z-index: 999;
+			display: none;
+			cursor: crosshair;
+		}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="500" height="300"></canvas>
+		<canvas id="copycanvas" width="300" height="300"></canvas>
+		<div id="square"></div>
+		<script src="camp.js"></script>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+/**index.wxss**/
+
+.text {
+  height: 1000px;
+  background: #cccs
+}

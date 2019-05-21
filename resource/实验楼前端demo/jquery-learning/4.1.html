@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meata charset="utf-8"/>
+  <title>get object width</title>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(function() {
+      alert("attr(\"width\"):" + $("#testDiv").attr("width")); //undifined
+      alert("css(\"width\"):" + $("#testDiv").css("width")); //auto(ie6) 或 1264px(ff)
+      alert("width():" + $("#testDiv").width()); //正确的数值1264
+      alert("style.width:" +  $("#testDiv")[0].style.width); //空值
+    })
+  </script>
+</head>
+<body>
+  <div id="testDiv">test text</div>
+</body>
+</html>

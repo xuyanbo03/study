@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Hello World jQuery!</title>
+    <script src="jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+    <div id="divMsg">Hello World!</div>
+    <input id="btnShow" type="button" value="show" />
+    <input id="btnHide" type="button" value="hidden" /><br/>
+    <input id="btnChange" type="button" value="change content is Hello World, too!"/>
+    <script>
+      $("#btnShow").bind("click", function(event) {
+        $("#divMsg").show();
+      });
+      
+      $("#btnHide").bind("click", function(event) {
+        $("#divMsg").hide();
+      });
+      
+      $("#btnChange").bind("click", function(event) {
+        $("#divMsg").html("Hello World, too!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo/demo",
+    "pages/demo1/demo1",
+    "pages/getpage/getpage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#ff0000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ccc",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"images/icon_note_sketch.png",
+      "selectedIconPath":"images/icon_note_PS.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath":"images/icon_note_sketch.png",
+      "selectedIconPath":"images/icon_note_PS.png"
+    },{
+      "pagePath": "pages/demo/demo",
+      "text": "demo",
+      "iconPath":"images/icon_note_sketch.png",
+      "selectedIconPath":"images/icon_note_PS.png"
+    },{
+      "pagePath": "pages/demo1/demo1",
+      "text": "demo1",
+      "iconPath":"images/icon_note_sketch.png",
+      "selectedIconPath":"images/icon_note_PS.png"
+    },{
+      "pagePath": "pages/getpage/getpage",
+      "text": "getpage",
+      "iconPath":"images/icon_note_sketch.png",
+      "selectedIconPath":"images/icon_note_PS.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

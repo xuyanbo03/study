@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Dynamic create object</title>
+  </head>
+  <body>
+    <div id="testDiv"></div>
+    <script type="text/javascript">
+      var testDiv = document.getElementById("testDiv");
+      var select = document.createElement("select");
+      select.options[0] = new Option("option1", "value1");
+      select.options[1] = new Option("option2", "value2");
+      select.size = "2";
+      var object = testDiv.appendChild(select);
+    </script>
+  </body>
+</html>

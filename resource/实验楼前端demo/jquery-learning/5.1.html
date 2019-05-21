@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <title>javascript event</title>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(function() {
+      document.getElementById("testDiv2").onclick = showMsg;
+    });
+    
+    function showMsg(event) {
+      alert("!!!");
+    }
+  </script>
+</head>
+<body>
+  <div id="testDiv1" onclick="showMsg();">click event 1</div>
+  <div id="testDiv2">click event 2</div>
+</body>
+</html>

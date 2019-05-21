@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <title>jQuery Ajax</title>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(function() {
+      var xhr = new AjaxXmlHttpRequest();
+      $("#btnAjaxOld").click(function(event) {
+        var xhr = new AjaxXmlHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4) {
+            document.getElementById("divResult").innerHTML = xhr.responseText;
+          }
+        }
+        //由于涉及到同源策略，需要服务器端的支持
+        xhr.open("GET", "data/AjaxGetCityInfo.aspx?resultType=html", true);
+        xhr.send(null);
+      });
+    });
+
+    //跨浏览器获取XmlHttpRequest对象
+    function AjaxXmlHttpRequest() {
+      var xmlHttp;
+      try {
+        // Firefox, Opera 8.0+, Safari
+        xmlHttp = new XMLHttpRequest();
+      } catch (e) {
+        // Internet Explorer
+        try {
+          xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e) {
+            alert("Your browser nonsupport AJAX！");
+            return false;
+          }
+        }
+      }
+      return xmlHttp;
+    }
+  </script>
+</head>
+<body>    
+  <button id="btnAjaxOld">original ajax call</button>
+  <div id="divResult"></div>
+</body>
+</html>

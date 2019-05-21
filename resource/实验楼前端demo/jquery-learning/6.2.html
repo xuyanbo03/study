@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <title>jQuery Ajax</title>
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+    $(function() {            
+      $("#btnAjaxJquery").click(function(event) {
+        $("#divResult").load("data/AjaxGetCityInfo.aspx", { "resultType": "html" });
+      });
+    })        
+  </script>
+</head>
+<body>    
+  <button id="btnAjaxJquery">use jQuery load method</button>
+  <div id="divResult"></div>
+</body>
+</html>
