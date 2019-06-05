@@ -1,0 +1,34 @@
+/* 公共样式 */
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right
+}
+
+/* IE浏览器清除浮动 */
+.clear{
+    zoom: 1;
+}
+/* 标准浏览器清除浮动 */
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 渐变 */
+.gradient{
+    background: linear-gradient(top,red,yellow);
+
+    /* 渐变兼容浏览器 */
+    background: -webkit-linear-gradient(top,#ffffff,#f8f8f8);
+    background: -moz-linear-gradient(top,#ffffff,#f8f8f8);
+    background: -ms-linear-gradient(top,#ffffff,#f8f8f8);
+    /* IE8，9 */
+    -ms-filter: "progid:DXImage Transform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#f8f8f8)";
+    /* IE6，7 */
+    /* +background:#f9f9f9; */
+}
+

@@ -1,0 +1,93 @@
+#header,#nav,.content{
+    width: 960px;
+    margin: 0 auto;
+}
+#search,.section,.side_section,.side_ad,#footer{
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+}
+.main_ad,.side_section,.side_ad{
+    margin-bottom: 10px;
+}
+
+
+body{
+    margin-bottom: 30px;
+}
+
+#header{
+    height: 30px;
+    border-radius: 0 0 6px 6px;
+}
+#nav{
+    height: 100px;
+    background: #ffc;
+}
+#search{
+    width: 958px;
+    height: 114px;
+    margin: 0  auto 10px;
+}
+.main{
+    width: 710px;
+}
+.main_wrap {
+    padding-bottom: 10px;
+}
+.section{
+    width: 318px;
+    height: 200px;
+    padding: 0 15px;
+} 
+.options{
+    width: 350px;
+    height: 200px;
+    position: relative;
+}  
+.main_ad{
+    border-radius: 6px;
+    overflow: hidden;
+} 
+.side{
+    width: 240px;
+}  
+.side_section{
+    height: 100px;
+}
+.side_ad{
+    overflow: hidden;
+}
+#footer{
+    width: 958px;
+    height: 78px;
+    background: #f9f9f9;
+    margin: 0  auto;
+}
+
+.options .tab{
+    height: 34px;
+    position: relative;
+    z-index: 2;
+}
+.options .tab li{
+    width: 172px;
+    height: 33px;
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+    border-radius:6px 6px 0 0;
+}
+.options .tab .active{
+    width: 172px;
+    height: 34px;
+    background: #fff;
+}
+.options .con{
+    width: 348px;
+    height: 80px;
+    border: 1px solid #dbdbdb;
+    border-radius: 0 0 6px 6px;
+    position: absolute;
+    top:34px;
+    left: 0;
+    z-index: 1;
+}
